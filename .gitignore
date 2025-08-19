@@ -1,55 +1,38 @@
-# Node / package managers
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
 node_modules/
-.npm/
-.pnpm-store/
 
-# Yarn (Berry)
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.yarnrc.yml
-
-# Expo caches & build output
+# Expo
 .expo/
-.expo-dev-cache/
-web-build/
 dist/
+web-build/
+expo-env.d.ts
 
-# EAS local build artifacts
-.eas/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-*.log
-
-# OS / Editor cruft
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-
-# Environment & secrets
-.env
-.env.*
-*.keystore
+# Native
+.kotlin/
+*.orig.*
 *.jks
 *.p8
 *.p12
+*.key
 *.mobileprovision
 
-# If you later prebuild/eject and DON'T want native folders tracked, keep these.
-# If you do want to commit native code, remove these two lines.
-android/
-ios/
+# Metro
+.metro-health-check*
 
-# Test coverage, misc
-coverage/
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
 
