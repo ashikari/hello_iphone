@@ -4,8 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style={{ fontSize: 28, fontWeight: 'bold', textAlign: 'center' }}>
+        👋✨ Hello Abbas! 🚀😎🎉
+        {"\n"}
+        You are a real software engineer now 🤓💾🧑‍💻😂
+      </Text>
+      <StatusBar style="light" />
     </View>
   );
 }
